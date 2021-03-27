@@ -1,5 +1,5 @@
 import React from "react";
-import Videoitems from "./Videoitems";
+import Videoitems from "./VideoItems";
 import { Segment ,List} from 'semantic-ui-react'
 
 const Videolist = ({video, onvideoselect})=>{
@@ -12,7 +12,7 @@ const Videolist = ({video, onvideoselect})=>{
     })
 return(
   <React.Fragment>
-    <Segment  style={{backgroundColor:"black"}}>
+    <Segment>
      <List  divided relaxed>{renderedlist}</List>
     </Segment>
   </React.Fragment>
