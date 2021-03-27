@@ -2,7 +2,7 @@
   "name": "youtube",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mangesh0712.github.com/pwa",
+  "homepage": "https://mangesh0712.github.com/youtube",
   "dependencies": {
     "axios": "^0.18.0",
     "gh-pages": "^2.1.1",
