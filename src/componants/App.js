@@ -3,16 +3,16 @@ import "./css/App.css"
 import { Container } from 'semantic-ui-react'
 import SearchBar from "./SearchBar";
 import youtube from "../apis/youtube";
-import Videolist from "./Videolist";
-import Videodetails from "./Videodetails";
+import Videolist from "./VideoList";
+import Videodetails from "./VideoDetails";
 
 class App extends React.Component{
  state= {video :[], selectedVideo :null};
+
  componentDidMount(){
-   this.onFormSubmit("taboo tom");
+   this.onFormSubmit("weeknd blinding lights");
  }
   onFormSubmit= async (term)=>{
-    console.log(term);
     const response= await youtube.get("/search",{
       params: {
         q: term 
@@ -24,7 +24,6 @@ class App extends React.Component{
     })
  }
 onvideoselect =(selectedVideo)=>{
-// console.log("from the app", video);
 this.setState({selectedVideo})
 }
   render(){ 
