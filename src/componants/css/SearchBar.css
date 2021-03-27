@@ -1,0 +1,28 @@
+@font-face {
+    src: url(/src/font/SourceSerifPro-Regular.ttf);
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    font-family: serif
+  }
+
+#bar{
+    color: white;
+    font-display: auto;
+    font-size: 15px;
+    font-family: serif
+}
+
+@media screen and (max-width:600px){
+   #bar{
+    color: white;
+    font-display: auto;
+        font-size: 20px;
+        font-family: serif;
+
+    }
+  #search{
+      margin-top: 30px;
+      margin-bottom: 10px;
+  }
+}

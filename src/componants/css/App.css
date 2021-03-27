@@ -1,0 +1,32 @@
+.video-area{
+    display: block
+}
+
+.video{
+    display: inline-block;
+    width: 70%
+}
+
+.video-list{
+    display: inline-block;
+    width: 28%;
+    margin-left: 2%;
+    margin-top:2%;
+}
+
+@media screen and (max-width: 600px) {
+    .video-area{
+        display: block
+    }
+    .video{
+        display: inline-block;
+        width: 100%;
+        margin-top:1%;
+    }
+    .video-list{
+        display: inline-block;
+        width: 100%;
+        margin-left: 0;
+        margin-top:1%;
+    }
+  }

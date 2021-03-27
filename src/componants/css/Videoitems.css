@@ -1,0 +1,27 @@
+.video-item{
+    display:flex !important;
+    align-items: center !important;
+    cursor: pointer; 
+}
+@font-face {
+    src: url(/src/font/SourceSerifPro-Regular.ttf);
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+  }
+.video-item.item img {
+   max-width: 30%;
+   border-radius: 4px;
+}
+
+#header{
+    font-size: 12px;
+    color: aliceblue;
+    font-family: serif;
+}
+
+@media screen and (max-width:600px){
+    .header{
+        font-size: 16px;
+    }
+ }
