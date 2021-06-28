@@ -16,7 +16,7 @@
 
 @media screen and (max-width:600px){
    #bar{
-    color: white;
+    color: black;
     font-display: auto;
         font-size: 20px;
         font-family: serif;
