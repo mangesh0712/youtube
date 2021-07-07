@@ -3,13 +3,15 @@ import "./css/SearchBar.css";
 import { Segment, Form } from "semantic-ui-react";
 
 const SearchBar = (props) => {
-  const [term, setTerm] = useState("");
+
+  const [searchedTerm, setSearchedTerm] = useState("");
   const onInputChange = (event) => {
-    setTerm(event.target.value);
+    setSearchedTerm(event.target.value);
   };
+
   const onFormSubmit = (event) => {
     event.preventDefault();
-    props.onFormSubmit(term);
+    props.onFormSubmit(searchedTerm);
   };
 
   return (
@@ -19,7 +21,7 @@ const SearchBar = (props) => {
           <Form.Field>
             <label id="bar">
               Searchtube
-              <input type="text" value={term} onChange={onInputChange} />{" "}
+              <input type="text" value={searchedTerm} onChange={onInputChange} />{" "}
             </label>
           </Form.Field>
         </Form>
@@ -27,4 +29,5 @@ const SearchBar = (props) => {
     </React.Fragment>
   );
 };
+
 export default SearchBar;

@@ -4,9 +4,10 @@ import "./css/SearchBar.css";
 import { Segment, Embed, Header, Icon } from "semantic-ui-react";
 
 const Videodetails = ({ video }) => {
+
   console.log(video, "vdo");
   if (!video) {
-    return <div>Loading....</div>;
+    return <></>;
   }
   return (
     <React.Fragment>
@@ -37,4 +38,5 @@ const Videodetails = ({ video }) => {
     </React.Fragment>
   );
 };
+
 export default Videodetails;
